@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicar | Estudar</title>
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/menu-responsivo.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons/bootstrap-icons.css">
+    <script src="./css/bootstrap-icons/bootstrap-icons.json"></script>
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right">
+            <img src="./img/logo.png" style="margin-left:-2rem!important; position: absolute; top: 45%; opacity: .8"
+                height="80em" class="mx-auto logo-load my-auto" alt="">
+        </div>
+    </div>
+    
+
+    <div class="px-3 px-md-5 px-xl-5 px-xxl-5 head py-1 bg-ispa d-flex">
+        <b class="text-white">Candidatos</b>
+        <b class="text-white mx-3">Estudantes</b>
+        <b class="text-white">Portal</b>
+    </div>
+    <nav class="px-3 px-md-5 px-xl-5 px-xxl-5 bg-light py-2">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <img onclick="link('./index')" src="./img/logo.png" style="height: 6em" alt="">
+                <b class="text-ispa sigla f-18 f-reg w-50 my-auto">Instituto Superior Politécnico Atlântida</b>
+            </div>
+            <div class="d-flex">
+                <h2 class="my-auto"><span style="color: green">PT</span> | <span class="text-secondary">EN</span></h2>
+                <p class="my-auto ms-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </p>
+            </div>
+        </div>
+        <div class="menu-btn px-3  mx-2 mx-md-0 d-flex">
+            <div class="d-flex menu-toggler gap-0">
+                <!-- <i class="bi bi-three-dots-vertical"></i> -->
+                <i class="bi text-ispa bi-list"></i>
+                <b class="text-ispa my-auto ms-2">Menu</b>
+            </div>
+        </div>
+        <div style="display: flex" class="bottom gap-4 mt-3 d-flex no-menu menu position-relative">
+
+            <div class="menu-item me-xxl-4 me-lg-2 me-md-3 me-xl-4 position-relative es">
+                <div class="est" style="z-index: 999999"><b class="">Estudar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem ; left:0; top: 2rem; z-index: 99"
+                    class="drop-est drop  p-2 bg-light">
+                    <p onclick="link('./licenciatura')">Licenciaturas</p>
+                    <p onclick="link('./licenciatura')">Mestrados</p>
+                    <p>Pós-Graduação</p>
+                    <p>Cursos Online</p>
+                    <p>Cursos de formação</p>
+                    <p>Unidades Curriculares</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4  mx-md-2 mx-xl-2 position-relative iv ">
+                <div class="inv" style="z-index: 999999"><b onclick="link('./investigar_no_ispa')"
+                        class="">Investigar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem; top: 2rem; z-index: 99999"
+                    class="drop-inv drop  p-2 bg-light">
+                    <p onclick="link('./investigar_no_ispa')">Investigar no ISPA</p>
+                    <p>Unidades de Investigação</p>
+                    <p onclick="link('./labs')">Laboratórios</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative int">
+                <div class="intt" style="z-index: 999999"><b class="">Internacional</b></div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-int drop  p-2 bg-light">
+                    <p onclick="link('./porque')">Porquê o ISPA</p>
+                     <p onclick="link('./estudante')">Estudantes Internacionais</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative act">
+                <div class="actt" style="z-index: 999999"><b onclick="link('actualidade')" class="">Actualidade</b>
+                </div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-act drop  p-2 bg-light">
+                    <p onclick="link('./evento')">Eventos</p>
+                    <p onclick="link('./news')">Notícias</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b onclick="link('./o_ispa')">O ISPA</b>
+            </div>
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b>10 Anos</b>
+            </div>
+        </div>
+    </nav>
+    <div class="search shadow px-3 px-md-5 px-xl-5 py-4 bg-light">
+        <div class="d-flex b-b">
+            <input type="search" class="w-100" name="" style="outline: none; border: none; background: transparent"
+                placeholder="PESQUISAR" id="">
+            <button class="btn rounded-0 bg-ispa btn-success">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <div class="alert rounded-0 alert-danger  my-2 f-12">
+            Por favor digite pelomenos 3 letras
+        </div>
+        <div class="d-flex flex-wrap">
+            <button class="btn rounded-0 f-12 btn-success">
+                Geral
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Pessoas
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Documentos
+            </button>
+        </div>
+
+    </div>
+
+    <!-- banner -->
+    <div style="background: linear-gradient(180deg, transparent, #000000E6), url('../img/b2.jpg') center center; background-size: cover; height: 45vh"
+        class="banner position-relative">
+        <div style="bottom: 1rem" class="px-3 px-md-5 px-xl-5 px-xxl-5  position-absolute">
+            <b class="text-white f-30">Psicologia</b>
+        </div>
+    </div>
+    <!-- Fechamento do banner -->
+
+    <main class="px-3 px-md-5 px-xl-5 px-xxl-5">
+
+<div class="row flex-row-reverse">
+    <div class="col-12 col-md-2 col-lg-2">
+        <br>
+        <br>
+        <button class="btn btn-success w-100 rounded-0">Candidatar</button>
+    </div>
+    <div class="col-12 col-md-8 col-lg-7">
+        <br>
+        <div class="details-magazine">
+            <p class="f-reg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut necessitatibus in explicabo
+                rem ipsam quas excepturi. Dolores, ducimus explicabo dolorum esse reprehenderit deleniti
+                accusantium neque minus perferendis aliquid architecto. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut necessitatibus in explicabo
+                rem ipsam quas excepturi. Dolores, ducimus explicabo dolorum esse reprehenderit deleniti
+                accusantium neque minus perferendis aliquid architecto. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque aut necessitatibus in explicabo
+                rem ipsam quas excepturi. Dolores, ducimus explicabo dolorum esse reprehenderit deleniti
+                accusantium neque minus perferendis aliquid architecto.
+            </p>
+            <br>
+
+            <br>
+            <b class="text-ispa">Mensagens dos(as) Reitores(as)</b>
+            <br><br>
+            <div class="d-flex">
+                <img src="./img/person.jpg" style="border: 2px solid green" height="50em" width="50em" class="rounded-circle" alt="">
+                <div class="">
+                    <b class="text-ispa">Nome da pessoa</b><br>
+                    <span class="text-secondary f-12">Funcao ou cargo</span>
+                </div>
+            </div>
+
+            <p class="f-reg f-14">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit nostrum totam vero suscipit quasi dolore. Praesentium ad cum adipisci qui ab dolorum saepe ullam ipsam cupiditate officia? Ipsum, natus.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem maxime veniam reprehenderit temporibus? Sit vitae tempora, eligendi modi consequatur mollitia exercitationem corrupti explicabo illum nobis asperiores similique, magnam corporis quos?
+            </p>
+
+
+        <button class="btn btn-success rounded-0">Candidatar</button>
+    <br><br>
+
+        <div class="b-b pb-2">
+            <b class="text-ispa">Informacoes Gerais</b>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-6 d-xl-flex gap-3 col-md-4 col-lg-3 col-xl-12">
+                <p class="f-reg">Duracao</p>
+                <p class="f-reg">Língua</p>
+                <p class="f-reg">Horário</p>
+                <p class="f-reg">Provas de ingresso</p>
+            </div>
+            <div class="col-6 d-xl-flex gap-3 col-md-4 col-lg-3 d col-xl-12">
+                <b class="">5 anos</b>
+                <p></p>
+                <p><b class="">Portugues</b></p>
+                <p><b class="">Diurno</b></p>
+                <p><b class="">Fisica(16) ou Historia(14) ou Ingles(20)</b></p>
+            </div>
+            <div class="col-12 my-3">
+                <a href="#">Propinas Estudantes</a>
+                <br><br>
+                <span class="d-flex"><span class="f-reg">1. ano</span> <b>80.000.00 AOA</b></span>
+                <span class="d-flex"><span class="f-reg">1. ano</span> <b>80.000.00 AOA</b></span>
+                <span class="d-flex"><span class="f-reg">1. ano</span> <b>80.000.00 AOA</b></span>
+                <span class="d-flex"><span class="f-reg">1. ano</span> <b>80.000.00 AOA</b></span>
+                <span class="d-flex"><span class="f-reg">1. ano</span> <b>80.000.00 AOA</b></span>
+            </div>
+        </div>
+        </div>
+
+        <br><br>
+        <div style="border-top: 1px solid green;" class=" d-flex gap-0 next-articles">
+            <div class="py-3 article-prev d-flex w-100 text-end px-2 ">
+                <!-- <i class="bi bi-arrow-left"></i> -->
+                <div class="">
+                    
+                </div>
+            </div>
+            <div class="py-3 article-next d-flex text-start px-2 w-100 ar">
+                <div class="">
+                    <b class="f-14">Próximo</b>
+                    <h3>Docentes</h3>
+                </div>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-2 col-lg-3">
+        <br>
+        <br>
+        <b class="text-ispa">Investigar no ISPA</b>
+        <br>
+        <br>
+        <a style="text-decoration: none; border-bottom: 1px solid green;  border-top: 1px solid green"
+            class="py-2 text-dark f-reg d-flex justify-content-between">
+            <span class="f-reg f-14 text-ispa">
+                Apresentação
+            </span>
+            <i class="bi text-success bi-arrow-right"></i>
+        </a>
+        <a href="#" style="text-decoration: none; border-bottom: 1px solid green"
+            class="py-2 text-dark f-reg d-flex w-100 justify-content-between">
+            <span class="f-reg f-14">
+                Docentes
+            </span>
+            <i class="bi text-success bi-arrow-right"></i>
+        </a>
+        <a style="text-decoration: none; border-bottom: 1px solid green"
+            class="py-2 text-dark f-reg d-flex w-100 justify-content-between">
+            <span class="f-reg f-14">
+                Planos de Estudos
+            </span>
+            <i class="bi text-success bi-arrow-right"></i>
+        </a>
+    </div>
+</div>
+        <br><br>
+        <br><br>
+        <div class="b-t py-2"></div>
+    </main>
+
+    <br>
+
+
+
+    <!-- Footer -->
+
+
+    <footer class="py-4 container">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">ISPA - Instituto Superior Politécnico Atlântida</b>
+                <p class="f-12 text-ispa f-reg"><i class="bi bi-geo"></i> Endereço da instituição, Angola
+
+                    <br>
+                    <b class="my-2"><i class="bi bi-telephone"></i> TEL: +244 912 345 678</b><br>
+                    <b class="my-1 d-flex gap-1"><i class="bi bi-envelope"></i> geral@ispatlantida.co.ao</b>
+                    <b>Contacte-nos</b>
+
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">Seguir o ISPA</b>
+                <p class="f-22 d-flex gap-3 text-ispa f-reg">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">Politicas de Cookies</b><br>
+                <b class="text-ispa f-14">Termos e Condições</b><br>
+                <b class="text-ispa f-14">Elogios, Sugestões, Reclamações ou Denúncias</b>
+            </div>
+        </div>
+        <center>
+            <span class="text-ispa f-12">&copy; 2023 - ISP Atlantida</span><br><br>
+            <span class="text-ispa mt-3 f-12">Made with <i class="bi bi-heart-fill text-danger"></i> by ISPA</span>
+        </center>
+    </footer>
+
+    <!-- Termino Footer-->
+
+
+    <script>
+
+
+        $(".inv").hover(function () {
+            $(".drop-inv").show();
+        })
+
+        $(".regime").click(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").addClass('shadow');
+            $(".regime-menu").removeClass('d-none');
+        })
+
+        $(".regime-menu").mouseleave(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").removeClass('shadow');
+            $(".regime-menu").addClass('d-none');
+        })
+
+        $(".drop-inv, .iv").mouseleave(function () {
+            $(".drop-inv").hide();
+        })
+
+        $(".est").hover(function () {
+            $(".drop-est").show();
+        })
+
+        $(".drop-est, .es").mouseleave(function () {
+            $(".drop-est").hide();
+        })
+
+        $(".intt").hover(function () {
+            $(".drop-int").show();
+        })
+
+        $(".drop-int, .int").mouseleave(function () {
+            $(".drop-int").hide();
+        })
+
+        $(".actt").hover(function () {
+            $(".drop-act").show();
+        })
+
+        $(".drop-act, .act").mouseleave(function () {
+            $(".drop-act").hide();
+        })
+
+        $(".menu-toggler").click(function () {
+            $(".menu").toggleClass('no-menu').animate({ duration: '.2s' });
+        })
+
+        $(".bi-search").click(function () {
+            $(".search").slideToggle('fast');
+        })
+
+        function link(link) {
+            window.location.href = link + '.html';
+        }
+
+    </script>
+
+</body>
+
+</html>

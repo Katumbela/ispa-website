@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualidade | Estudar</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/menu-responsivo.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons/bootstrap-icons.css">
+    <script src="./css/bootstrap-icons/bootstrap-icons.json"></script>
+    <link rel="stylesheet" href="./css/main-style.css">
+
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right">
+            <img src="./img/logo.png" style="margin-left:-2rem!important; position: absolute; top: 45%; opacity: .8"
+                height="80em" class="mx-auto logo-load my-auto" alt="">
+        </div>
+    </div>
+
+    <div class="px-3 px-md-5 px-xl-5 px-xxl-5 head py-1 bg-ispa d-flex">
+        <b class="text-white">Candidatos</b>
+        <b class="text-white mx-3">Estudantes</b>
+        <b class="text-white">Portal</b>
+    </div>
+    <nav class="px-3 px-md-5 px-xl-5 px-xxl-5 bg-light py-2">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <img onclick="link('./index')" src="./img/logo.png" style="height: 6em" alt="">
+                <b class="text-ispa sigla f-18 f-reg w-50 my-auto">Instituto Superior Politécnico Atlântida</b>
+            </div>
+            <div class="d-flex">
+                <h2 class="my-auto"><span style="color: green">PT</span> | <span class="text-secondary">EN</span></h2>
+                <p class="my-auto ms-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </p>
+            </div>
+        </div>
+        <div class="menu-btn px-3  mx-2 mx-md-0 d-flex">
+            <div class="d-flex menu-toggler gap-0">
+                <!-- <i class="bi bi-three-dots-vertical"></i> -->
+                <i class="bi text-ispa bi-list"></i>
+                <b class="text-ispa my-auto ms-2">Menu</b>
+            </div>
+        </div>
+        <div style="display: flex" class="bottom gap-4 mt-3 d-flex no-menu menu position-relative">
+
+            <div class="menu-item me-xxl-4 me-lg-2 me-md-3 me-xl-4 position-relative es">
+                <div class="est" style="z-index: 999999"><b class="">Estudar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem ; left:0; top: 2rem; z-index: 99"
+                    class="drop-est drop  p-2 bg-light">
+                    <p onclick="link('./licenciatura')">Licenciaturas</p>
+                    <p onclick="link('./licenciatura')">Mestrados</p>
+                    <p>Pós-Graduação</p>
+                    <p>Cursos Online</p>
+                    <p>Cursos de formação</p>
+                    <p>Unidades Curriculares</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4  mx-md-2 mx-xl-2 position-relative iv ">
+                <div class="inv" style="z-index: 999999"><b onclick="link('./investigar_no_ispa')"
+                        class="">Investigar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem; top: 2rem; z-index: 99999"
+                    class="drop-inv drop  p-2 bg-light">
+                    <p onclick="link('./investigar_no_ispa')">Investigar no ISPA</p>
+                    <p>Unidades de Investigação</p>
+                    <p onclick="link('./labs')">Laboratórios</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative int">
+                <div class="intt" style="z-index: 999999"><b class="">Internacional</b></div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-int drop  p-2 bg-light">
+                    <p onclick="link('./porque')">Porquê o ISPA</p>
+                     <p onclick="link('./estudante')">Estudantes Internacionais</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative act">
+                <div class="actt" style="z-index: 999999"><b onclick="link('actualidade')" class="">Actualidade</b>
+                </div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-act drop  p-2 bg-light">
+                    <p onclick="link('./evento')">Eventos</p>
+                    <p onclick="link('./news')">Notícias</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b onclick="link('./o_ispa')">O ISPA</b>
+            </div>
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b>10 Anos</b>
+            </div>
+        </div>
+    </nav>
+    <div class="search shadow px-3 px-md-5 px-xl-5 py-4 bg-light">
+        <div class="d-flex b-b">
+            <input type="search" class="w-100" name="" style="outline: none; border: none; background: transparent"
+                placeholder="PESQUISAR" id="">
+            <button class="btn rounded-0 bg-ispa btn-success">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <div class="alert rounded-0 alert-danger  my-2 f-12">
+            Por favor digite pelomenos 3 letras
+        </div>
+        <div class="d-flex flex-wrap">
+            <button class="btn rounded-0 f-12 btn-success">
+                Geral
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Pessoas
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Documentos
+            </button>
+        </div>
+
+    </div>
+
+
+    <main class="px-3 px-md-5 px-xl-5 px-xxl-5">
+        <br>
+        <h2 class="text-ispa">Noticias</h2>
+
+
+        <div class="row py-4 py-md-5">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <img src="./img/img2.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-sm-6 col-md-8 col-lg-8">
+                <span class="f-reg f-10 text-ispa">Institucional</span><br>
+                <b class="">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </b><br>
+                <br>
+                <p class="text-secondary f-reg f-12">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptatem nostrum doloribus
+                    esse. Odit, inventore cupiditate omnis natus voluptatum dicta reprehenderit eos quisquam error,
+                    nemo, assumenda nam dolores excepturi ut!
+                </p>
+                <button class="btn rounded-0 btn-outline-success">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+
+
+        <div class="row flex-row-reverse py-4 py-md-5 b-t b-b ">
+            <div class="col-12 col-sm-6  col-md-5 col-lg-4">
+                <img src="./img/img5.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-sm-6  col-md-7 col-lg-8">
+                <span class="f-reg f-10 text-ispa">Institucional</span><br>
+                <b class="">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </b><br>
+                <br>
+                <p class="text-secondary f-reg f-12">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptatem nostrum doloribus
+                    esse. Odit, inventore cupiditate omnis natus voluptatum dicta reprehenderit eos quisquam error,
+                    nemo, assumenda nam dolores excepturi ut!
+                </p>
+                <button class="btn rounded-0 btn-outline-success">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+
+
+
+        <div class="row b-b py-4 py-md-5">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                <img src="./img/img1.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-sm-6 col-md-8 col-lg-8">
+                <span class="f-reg f-10 text-ispa">Institucional</span><br>
+                <b class="">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </b><br>
+                <br>
+                <p class="text-secondary f-reg f-12">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium voluptatem nostrum doloribus
+                    esse. Odit, inventore cupiditate omnis natus voluptatum dicta reprehenderit eos quisquam error,
+                    nemo, assumenda nam dolores excepturi ut!
+                </p>
+                <button class="btn rounded-0 btn-outline-success">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <h2 class="text-ispa">Eventos</h2>
+
+
+
+        <div class="card-newss">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-4">
+                    <a style="text-decoration: none" href="news.html" class="hover-card">
+                        <div class="card border-0 rounded-0 w-100">
+                            <img src="./img/img11.jpg" class="card-img-top card-hover rounded-0" alt="img"
+                                style="height: 10em">
+                            <div class="mt-2 f-reg">
+                                <h5 class="f-12 text-ispa">Card title</h5>
+                                <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                                <a href="#" style="margin-top: -1rem" class="btn rounded-0 bg-ispa text-white">Ver
+                                    evento</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-4">
+                    <div class="card border-0 rounded-0 w-100">
+                        <img src="./img/img11.jpg" class="card-img-top hover-card rounded-0" alt="img"
+                            style="height: 10em">
+                        <div class="mt-2 f-reg">
+                            <h5 class="f-12 text-ispa">Um outro titulo </h5>
+                            <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                            <a href="#" style="margin-top: -1rem" class="btn rounded-0 bg-ispa text-white">Ver
+                                evento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-4">
+                    <a style="text-decoration: none" href="evento.html" class="hover-card">
+                        <div class="card border-0 rounded-0 w-100">
+                            <img src="./img/img12.jpg" class="card-img-top hover-card rounded-0" alt="img"
+                                style="height: 10em">
+                            <div class="mt-2 f-reg">
+                                <h5 class="f-12 text-ispa">Evento - sof jhjf n titulo to</h5>
+                                <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                                <a href="#" style="margin-top: -1rem" class="btn rounded-0 bg-ispa text-white">Ver
+                                    evento</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="text-ispa">Provas</h2>
+
+
+        <!-- Tab links -->
+        <div class="tab row">
+            <div class="col-12 col-sm-6 col-md-4 text-center my-2">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label onclick="openCity(event, 'Sociais')" class="btn tablinks btn-outline-success rounded-0"
+                    for="success-outlined">Ciencias sociais</label>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 text-center my-2">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label onclick="openCity(event, 'Eng')" class="btn tablinks btn-outline-success rounded-0"
+                    for="success-outlined">Engenharias</label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-center my-2">
+                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off">
+                <label onclick="openCity(event, 'Direito')" class="btn tablinks btn-outline-success rounded-0"
+                    for="success-outlined">Direito</label>
+            </div>
+        </div>
+<br>
+        <!-- Tab content -->
+        <div id="Sociais" class="tabcontent mt-xl-3">
+            <h3 class="d-flex">Ciencias Sociais</h3>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Eng" class="tabcontent mt-xl-3">
+            <h3>Engenharias</h3>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Direito" class="tabcontent  mt-xl-3 ">
+            <h3>Curso de Direito</h3>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                    <div class="row b-all b-r">
+                        <div class="col-12 col-sm-3 p-2">
+                            <div class="w-100 bg-light">
+                                <b class="f-16 text-ispa">04 Mai.</b>
+                                <br>
+                                <span class="text-ispa f-10">14:00</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <span class="text-ispa f-10">Licenciatura</span><br>
+                            <b>Curso de exemplo </b><br>
+                            <p class="text-secondary f-reg f-12">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit
+                                voluptate sequi voluptates necessitatibus! Est debitis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                <div class="row b-all b-r">
+                    <div class="col-12 col-sm-3 p-2">
+                        <div class="w-100 bg-light">
+                            <b class="f-16 text-ispa">04 Mai.</b>
+                            <br>
+                            <span class="text-ispa f-10">14:00</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <span class="text-ispa f-10">Licenciatura</span><br>
+                        <b>Curso de exemplo </b><br>
+                        <p class="text-secondary f-reg f-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit voluptate
+                            sequi voluptates necessitatibus! Est debitis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                <div class="row b-all b-r">
+                    <div class="col-12 col-sm-3 p-2">
+                        <div class="w-100 bg-light">
+                            <b class="f-16 text-ispa">04 Mai.</b>
+                            <br>
+                            <span class="text-ispa f-10">14:00</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <span class="text-ispa f-10">Licenciatura</span><br>
+                        <b>Curso de exemplo </b><br>
+                        <p class="text-secondary f-reg f-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit voluptate
+                            sequi voluptates necessitatibus! Est debitis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 py-2 col-lg-3">
+                <div class="row b-all b-r">
+                    <div class="col-12 col-sm-3 p-2">
+                        <div class="w-100 bg-light">
+                            <b class="f-16 text-ispa">04 Mai.</b>
+                            <br>
+                            <span class="text-ispa f-10">14:00</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <span class="text-ispa f-10">Licenciatura</span><br>
+                        <b>Curso de exemplo </b><br>
+                        <p class="text-secondary f-reg f-12">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur velit voluptate
+                            sequi voluptates necessitatibus! Est debitis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br><br>
+        <br>
+
+        <div class="b-t py-1"></div>
+
+    </main>
+
+    <br>
+
+
+
+    <!-- Footer -->
+
+
+    <footer class="py-4 container">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">ISPA - Instituto Superior Politécnico Atlântida</b>
+                <p class="f-12 text-ispa f-reg"><i class="bi bi-geo"></i> Endereço da instituição, Angola
+
+                    <br>
+                    <b class="my-2"><i class="bi bi-telephone"></i> TEL: +244 912 345 678</b><br>
+                    <b class="my-1 d-flex gap-1"><i class="bi bi-envelope"></i> geral@ispatlantida.co.ao</b>
+                    <b>Contacte-nos</b>
+
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">Seguir o ISPA</b>
+                <p class="f-22 d-flex gap-3 text-ispa f-reg">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">Politicas de Cookies</b><br>
+                <b class="text-ispa f-14">Termos e Condições</b><br>
+                <b class="text-ispa f-14">Elogios, Sugestões, Reclamações ou Denúncias</b>
+            </div>
+        </div>
+        <center>
+            <span class="text-ispa f-12">&copy; 2023 - ISP Atlantida</span><br><br>
+            <span class="text-ispa mt-3 f-12">Made with <i class="bi bi-heart-fill text-danger"></i> by ISPA</span>
+        </center>
+    </footer>
+
+    <!-- Termino Footer-->
+
+
+    <script>
+
+
+        $(".inv").hover(function () {
+            $(".drop-inv").show();
+        })
+
+        $(".regime").click(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").addClass('shadow');
+            $(".regime-menu").removeClass('d-none');
+        })
+
+        $(".regime-menu").mouseleave(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").removeClass('shadow');
+            $(".regime-menu").addClass('d-none');
+        })
+
+        $(".drop-inv, .iv").mouseleave(function () {
+            $(".drop-inv").hide();
+        })
+
+        $(".est").hover(function () {
+            $(".drop-est").show();
+        })
+
+        $(".drop-est, .es").mouseleave(function () {
+            $(".drop-est").hide();
+        })
+
+        $(".intt").hover(function () {
+            $(".drop-int").show();
+        })
+
+        $(".drop-int, .int").mouseleave(function () {
+            $(".drop-int").hide();
+        })
+
+        $(".actt").hover(function () {
+            $(".drop-act").show();
+        })
+
+        $(".drop-act, .act").mouseleave(function () {
+            $(".drop-act").hide();
+        })
+
+        $(".menu-toggler").click(function () {
+            $(".menu").toggleClass('no-menu').animate({ duration: '.2s' });
+        })
+
+        $(".bi-search").click(function () {
+            $(".search").slideToggle('fast');
+        })
+
+        function link(link) {
+            window.location.href = link + '.html';
+        }
+
+        function openCity(evt, cityName) {
+
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+@media (max-width: 768px) {
+    .hidden-sm {
+        display: none !important;
+    }
+
+    .show-sm {
+        display: block;
+    }
+
+    .b-l-r {
+        border-bottom: 2px solid white; 
+        border-top: 2px solid white;
+        border-left: none; 
+        border-right: none;
+        padding: 1.8rem 0;
+        margin: 1rem 0;
+    }
+
+
+.anim {
+    animation: 1s n linear infinite;
+}
+
+@keyframes n {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.w100 {
+    width: 100%;
+}
+    .head {
+        display: none;
+    }
+
+    .px-5 {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+
+}

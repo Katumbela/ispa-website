@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISPA | HOME</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/menu-responsivo.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons/bootstrap-icons.css">
+    <script src="./css/bootstrap-icons/bootstrap-icons.json"></script>
+    <link rel="stylesheet" href="./css/main-style.css">
+</head>
+
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right">
+            <img src="./img/logo.png" style="margin-left:-2rem!important; position: absolute; top: 45%; opacity: .8"
+                height="80em" class="mx-auto logo-load my-auto" alt="">
+        </div>
+    </div>
+
+    <div class="px-3 px-md-5 px-xl-5 px-xxl-5 head py-1 bg-ispa d-flex">
+        <b class="text-white">Candidatos</b>
+        <b class="text-white mx-3">Estudantes</b>
+        <b class="text-white">Portal</b>
+    </div>
+    <nav class="px-3 px-md-5 px-xl-5 px-xxl-5 bg-light py-2">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <img onclick="link('./index')" src="./img/logo.png" style="height: 6em" alt="">
+                <b class="text-ispa sigla f-18 f-reg w-50 my-auto">Instituto Superior Politécnico Atlântida</b>
+            </div>
+            <div class="d-flex">
+                <h2 class="my-auto"><span style="color: green">PT</span> | <span class="text-secondary">EN</span></h2>
+                <p class="my-auto ms-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </p>
+            </div>
+        </div>
+        <div class="menu-btn px-3  mx-2 mx-md-0 d-flex">
+            <div class="d-flex menu-toggler gap-0">
+                <!-- <i class="bi bi-three-dots-vertical"></i> -->
+                <i class="bi text-ispa bi-list"></i>
+                <b class="text-ispa my-auto ms-2">Menu</b>
+            </div>
+        </div>
+        <div style="display: flex" class="bottom gap-4 mt-3 d-flex no-menu menu position-relative">
+
+            <div class="menu-item me-xxl-4 me-lg-2 me-md-3 me-xl-4 position-relative es">
+                <div class="est" style="z-index: 999999"><b class="">Estudar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem ; left:0; top: 2rem; z-index: 99"
+                    class="drop-est drop  p-2 bg-light">
+                    <p onclick="link('./licenciatura')">Licenciaturas</p>
+                    <p onclick="link('./licenciatura')">Mestrados</p>
+                    <p>Pós-Graduação</p>
+                    <p>Cursos Online</p>
+                    <p>Cursos de formação</p>
+                    <p>Unidades Curriculares</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4  mx-md-2 mx-xl-2 position-relative iv ">
+                <div class="inv" style="z-index: 999999"><b onclick="link('./investigar_no_ispa')"
+                        class="">Investigar</b></div>
+                <div style="position: absolute; width: 10rem;margin-left: -.6rem; top: 2rem; z-index: 99999"
+                    class="drop-inv drop  p-2 bg-light">
+                    <p onclick="link('./investigar_no_ispa')">Investigar no ISPA</p>
+                    <p>Unidades de Investigação</p>
+                    <p onclick="link('./labs')">Laboratórios</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative int">
+                <div class="intt" style="z-index: 999999"><b class="">Internacional</b></div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-int drop  p-2 bg-light">
+                    <p onclick="link('./porque')">Porquê o ISPA</p>
+                     <p onclick="link('./estudante')">Estudantes Internacionais</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 position-relative act">
+                <div class="actt" style="z-index: 999999"><b onclick="link('actualidade')" class="">Actualidade</b>
+                </div>
+                <div style="position: absolute; width: 13rem;margin-left: -.6rem; top: 2rem; z-index: 99"
+                    class="drop-act drop  p-2 bg-light">
+                    <p onclick="link('./evento')">Eventos</p>
+                    <p onclick="link('./news')">Notícias</p>
+                </div>
+            </div>
+
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b onclick="link('./o_ispa')">O ISPA</b>
+            </div>
+            <div class="menu-item mx-xxl-4   mx-md-2 mx-xl-2 ">
+                <b>10 Anos</b>
+            </div>
+        </div>
+    </nav>
+    <div class="search shadow px-3 px-md-5 px-xl-5 py-4 bg-light">
+        <div class="d-flex b-b">
+            <input type="search" class="w-100" name="" style="outline: none; border: none; background: transparent"
+                placeholder="PESQUISAR" id="">
+            <button class="btn rounded-0 bg-ispa btn-success">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <div class="alert rounded-0 alert-danger  my-2 f-12">
+            Por favor digite pelomenos 3 letras
+        </div>
+        <div class="d-flex flex-wrap">
+            <button class="btn rounded-0 f-12 btn-success">
+                Geral
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Pessoas
+            </button>
+            <button class="btn rounded-0 f-12 btn-outline-success">
+                Documentos
+            </button>
+        </div>
+
+    </div>
+
+
+    <header>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div style="background: url('./img/img4.jpg') center center; height: 50vh; background-size: cover"
+                    class="carousel-item active position-relative">
+                    <p style="position: absolute; bottom:-1rem" class="px-3 px-md-5 px-xl-5 px-xxl-5 py-4 bg-darkk">
+                        <b>Inscriçoes abertas para o ano lectivo 2023-2024</b><br>
+                        <span>Licenciatura, Mestrado & Doutoramento</span><br>
+                        <button class="btn rounded-0 border-white text-white mt-3 btn-outline-success">
+
+                            Inscrição <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </button>
+                    </p>
+                </div>
+                <div class="carousel-item"
+                    style="background: url('./img/img1.jpg') center center; height: 50vh; background-size: cover">
+
+                </div>
+                <div class="carousel-item"
+                    style="background: url('./img/img3.jpg') center center; height: 50vh; background-size: cover">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="px-3 px-md-5 px-xl-5 px-xxl-5 my-5">
+
+        <b class="text-ispa">
+            O QUE FAZEMOS
+        </b>
+        <br>
+        <br>
+
+        <!--as tres imagens abaixo da parte do que fazemos -->
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-6  my-2">
+                <a class="hover-card" href="magazine.html">
+                    <div class="hover-card dest position-relative"
+                        style="background: url('./img/img9.jpg') center center; background-size: cover; height: 16em">
+                        <div style="left:0; right: 0; height: 6rem; bottom: 0"
+                            class="position-absolute b-g p-2 text-white">
+                            <b>Investigação</b>
+                            <div class="lin-b"></div>
+                            <h5>Um titulo relationado a uma investigacao</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 my-2 hover-card pointer">
+                <div style="background: url('./img/img8.jpg') center center; background-size: cover; height: 16em"
+                    class="position-relative hover-card dest w-100">
+
+                    <div style="left:0; right: 0; height: 6rem; bottom: 0" class="position-absolute b-g p-2 text-white">
+                        <b>Investigação</b>
+                        <div class="lin-b"></div>
+                        <h5>Um titulo relationado a uma investigacao</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 my-2 pointer hover-card">
+                <div style="background: url('./img/img7.jpg') center center; background-size: cover; height: 16em"
+                    class="position-relative hover-card dest w-100">
+
+                    <div style="left:0; right: 0; height: 6rem; bottom: 0" class="position-absolute b-g p-2 text-white">
+                        <b>Investigação</b>
+                        <div class="lin-b"></div>
+                        <h5>Um titulo relationado a uma investigacao</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fechamento das tres fotos-->
+
+        <!-- Inicio da parte das noticias ou eventos -->
+        <br>
+        <br>
+        <b class="text-ispa">
+            NOTÍCIAS / EVENTOS
+        </b>
+        <br>
+        <br>
+        <div class="card-newss">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <a style="text-decoration: none" href="news.html" class="hover-card">
+                        <div class="card border-0 rounded-0 w-100">
+                            <img src="./img/img11.jpg" class="card-img-top card-hover rounded-0" alt="img"
+                                style="height: 10em">
+                            <div class="mt-2 f-reg">
+                                <h5 class="f-12 text-ispa">Card title</h5>
+                                <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                                <a href="#" style="margin-top: -1rem"
+                                    class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                    evento</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <div class="card border-0 rounded-0 w-100">
+                        <img src="./img/img11.jpg" class="card-img-top hover-card rounded-0" alt="img"
+                            style="height: 10em">
+                        <div class="mt-2 f-reg">
+                            <h5 class="f-12 text-ispa">Um outro titulo </h5>
+                            <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                            <a href="#" style="margin-top: -1rem"
+                                class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                evento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <a style="text-decoration: none" href="evento.html" class="hover-card">
+                        <div class="card border-0 rounded-0 w-100">
+                            <img src="./img/img12.jpg" class="card-img-top hover-card rounded-0" alt="img"
+                                style="height: 10em">
+                            <div class="mt-2 f-reg">
+                                <h5 class="f-12 text-ispa">Evento - sof jhjf n titulo to</h5>
+                                <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                                <a href="#" style="margin-top: -1rem"
+                                    class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                    evento</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <div class="card border-0 rounded-0 w-100">
+                        <img src="./img/img11.jpg" class="card-img-top rounded-0" alt="img" style="height: 10em">
+                        <div class="mt-2 f-reg">
+                            <h5 class="f-12 text-ispa">Card Titulo titulo aaaa</h5>
+                            <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                            <a href="#" style="margin-top: -1rem"
+                                class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                evento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <div class="card border-0 rounded-0 w-100">
+                        <img src="./img/img13.jpg" class="card-img-top rounded-0" alt="img" style="height: 10em">
+                        <div class="mt-2 f-reg">
+                            <h5 class="f-12 text-ispa">Card Titulo titulo aaaa</h5>
+                            <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                            <a href="#" style="margin-top: -1rem"
+                                class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                evento</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 my-3 col-lg-3 col-xl-3 col-xxl-3 hover-card pointer">
+                    <div class="card border-0 rounded-0 w-100">
+                        <img src="./img/img11.jpg" class="card-img-top rounded-0" alt="img" style="height: 10em">
+                        <div class="mt-2 f-reg">
+                            <h5 class="f-12 text-ispa">Card Titulo titulo aaaa</h5>
+                            <p class="f-reg f-14 text-secondary">Alguma descricao da acividade ou noticia....</p>
+                            <a href="#" style="margin-top: -1rem"
+                                class="btn btn-outline-success rounded-0 bg-ispa text-white">Ver
+                                evento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fechamentoda parte das noticias -->
+    </main>
+
+
+    <!-- Parte do ISPA em numeros -->
+    <br>
+    <br>
+    <div class="px-3 px-md-5 px-xl-5 px-xxl-5">
+        <b class="text-ispa ">
+            ISPA EM NÚMEROS
+        </b>
+    </div>
+    <br>
+    <br>
+
+    <div class="px-5 bg-ispa py-5">
+
+        <div class="row">
+            <div class="col-12 col-xl-3 col-sm-4 col-md-6 px-4">
+
+                <span class="text-white f-12">Comunidade</span>
+
+                <div class=" d-flex justify-content-between">
+                    <i class="bi bi-people-fill f-40 text-white"></i>
+                    <div class="text-white text-end">
+                        <h1>90000</h1>
+                        <span class="f-14">Estudantes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 b-l-r col-sm-4 col-md-6 px-4 ">
+
+                <span class="text-white f-12">Internacionalização</span>
+
+                <div class="d-flex justify-content-between">
+                    <i class="bi text-white f-40 bi-globe-europe-africa"></i>
+                    <div class="text-white text-end">
+                        <h1>700</h1>
+                        <span class="f-14">Lorem ipsum,reprehenderit veritatis pariatur.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 b-l-r col-sm-4 col-md-6 px-4 ">
+                <span class="text-white f-12">Empregabilidade</span>
+                <div class="d-flex justify-content-between">
+                    <i class="bi bi-briefcase-fill f-40 text-white"></i>
+                    <div class="text-white text-end">
+                        <h1>80%</h1>
+                        <span class="f-14">Lorem ipsum,reprehenderit veritatis pariatur.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-3 col-sm-4 col-md-6 px-4 ">
+
+                <span class="text-white f-12">Comunidade</span>
+                <div class="d-flex justify-content-between">
+                    <i class="bi bi-mortarboard-fill text-white f-40"></i>
+                    <div class="text-white text-end">
+                        <h1>27920</h1>
+                        <span class="f-14">Lorem ipsum,reprehenderit.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Fechamento da parte do ISPA em numeros -->
+
+
+    <!--  parte das cenas dos items da school -->
+
+    <br>
+    <div class="px-3 px-md-5 px-xl-5 px-xxl-5">
+
+        <div class="row ">
+            <div class="col-12 col-sm-6 col-md-4 my-2">
+                <div style="border-left: 3px solid green" class="px-4">
+                    <h4 class="text-ispa">SOBRE O ISPA</h4>
+                    <p class="hover text-dark f-reg">
+                        Apresentação
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Organização
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Qualidade
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Campus
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 my-2">
+                <div style="border-left: 3px solid green" class="px-4">
+                    <h4 class="text-ispa"> ESTUDAR</h4>
+                    <p class="hover text-dark f-reg">
+                        Licenciaturas
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Mestrados
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Doutoramentos
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Pós-graduações e Executive Masters
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Cursos Online e de Curta Duração
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Maiores de 23
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 my-2">
+                <div style="border-left: 3px solid green" class=" px-4">
+                    <h4 class="text-ispa"> ESCOLAS E DEPARTAMENTOS</h4>
+                    <p class="hover text-dark f-reg">
+                        Ciencias Sociais E Humanas
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Sociologia e Politicas Publicas
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Tenologias e Arquitetura
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Engenharias
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 my-2">
+                <div style="border-left: 3px solid green" class=" px-4">
+                    <h4 class="text-ispa"> INVESTIGAR</h4>
+                    <p class="hover text-dark f-reg">
+                        Unidades de Investigacao
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Revistas e Editoras
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Observatorios
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Apoio a Investigacao
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 my-2">
+                <div style="border-left: 3px solid green" class=" px-4">
+                    <h4 class="text-ispa"> RECURSOS</h4>
+                    <p class="hover text-dark f-reg">
+                        Bibliotecas
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Portal do Estudante
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        E-learning
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Espaços
+                    </p>
+                    <p class="hover text-dark f-reg">
+                        Laboratórios
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Fechamento da parte das cenas da school -->
+
+    <br>
+    <br><br>
+    <br><br>
+
+    <div class="px-5">
+        <hr>
+    </div>
+
+
+    <footer class="py-4 container">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">ISPA - Instituto Superior Politécnico Atlântida</b>
+                <p class="f-12 text-ispa f-reg"><i class="bi bi-geo"></i> Endereço da instituição, Angola
+
+                    <br>
+                    <b class="my-2"><i class="bi bi-telephone"></i> TEL: +244 912 345 678</b><br>
+                    <b class="my-1 d-flex gap-1"><i class="bi bi-envelope"></i> geral@ispatlantida.co.ao</b>
+                    <b>Contacte-nos</b>
+
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b class="text-ispa f-14">Seguir o ISPA</b>
+                <p class="f-22 d-flex gap-3 text-ispa f-reg">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-youtube"></i>
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <b onclick="link('politicas_de_cookies')" class="text-ispa f-14">Politicas de Cookies</b><br>
+                <b class="text-ispa f-14">Termos e Condições</b><br>
+                <b class="text-ispa f-14">Elogios, Sugestões, Reclamações ou Denúncias</b>
+            </div>
+        </div>
+        <center>
+            <span class="text-ispa f-12">&copy; 2023 - ISP Atlantida</span><br><br>
+            <span class="text-ispa mt-3 f-12">Made with <i class="bi bi-heart-fill text-danger"></i> by ISPA</span>
+        </center>
+    </footer>
+    <br>
+    <br>
+
+    <script src="./js/script.js"></script>
+
+
+
+    <script>
+
+
+        $(".inv").hover(function () {
+            $(".drop-inv").show();
+        })
+
+        $(".regime").click(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").addClass('shadow');
+            $(".regime-menu").removeClass('d-none');
+        })
+
+        $(".regime-menu").mouseleave(function () {
+            $(".regime-menu").fadeToggle();
+            $(".regime-menu").removeClass('shadow');
+            $(".regime-menu").addClass('d-none');
+        })
+
+        $(".drop-inv, .iv").mouseleave(function () {
+            $(".drop-inv").hide();
+        })
+
+        $(".est").hover(function () {
+            $(".drop-est").show();
+        })
+
+        $(".drop-est, .es").mouseleave(function () {
+            $(".drop-est").hide();
+        })
+
+        $(".intt").hover(function () {
+            $(".drop-int").show();
+        })
+
+        $(".drop-int, .int").mouseleave(function () {
+            $(".drop-int").hide();
+        })
+
+        $(".actt").hover(function () {
+            $(".drop-act").show();
+        })
+
+        $(".drop-act, .act").mouseleave(function () {
+            $(".drop-act").hide();
+        })
+
+        $(".menu-toggler").click(function () {
+            $(".menu").toggleClass('no-menu').animate({ duration: '.2s' });
+        })
+
+        $(".bi-search").click(function () {
+            $(".search").slideToggle('fast');
+        })
+
+        function link(link) {
+
+            window.location.href = link + '.html';
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

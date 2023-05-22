@@ -1,0 +1,279 @@
+.menu .items{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    z-index: 2000!important;
+}
+
+.f-50 {
+    font-size: 50px !important;
+}
+
+.my-set {
+    margin-top:25vh;
+}
+
+.anim {
+    animation: 1s n linear infinite;
+}
+
+@keyframes n {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.menu .btns {
+    border-radius: 6px;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menu .btns i{
+    font-size: 20px;
+}
+.menu .btns:hover .icon{
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+.icon{
+    transition: .3s;
+}
+
+
+.mainn{
+    margin-top: -1.5rem!important;
+}
+
+
+@media (max-width: 700px) {
+
+    .w50 {
+        width: 90%;
+    }
+    
+
+.user {
+    height: 15rem!important;
+    width: 2rem!important;
+    border-radius: 10px;
+}
+
+.btn-c{
+    height: 2rem; 
+    width: 6rem; 
+    line-height: 1.8rem!important; 
+    padding: 0
+}
+
+.mainn{
+    margin-top: 1.5rem!important;
+}
+
+.menu .items{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 0px!important;
+    margin-bottom: 1rem;
+    overflow-x: scroll;
+}
+
+.foto{
+    display: none;
+}
+
+
+.moadl {
+    margin-top: 6rem;
+}
+
+}
+
+.ativo {
+    box-shadow: 2px 3px 9px #cb3737;
+}
+
+.settings {
+    animation: 7s roda ease-in-out infinite;
+}
+
+@keyframes roda {
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.bg-k {
+    background: #d9d9d94b;
+}
+
+.bg-k2 {
+    background: #d9d9d985;
+}
+
+.foto {
+    cursor: pointer;
+}
+
+.border {
+    border: 2px solid #4a6cf7!important;
+}
+
+.border-b {
+    border: 1px solid #86868684!important;
+}
+
+.user {
+    height: 15rem;
+    width: 11rem!important;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.d-block{
+    border-radius: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d96e;
+    border-radius: 10px;
+    padding: .3rem;
+    transition: .2s;
+}
+
+.item:hover {
+    background: rgb(98, 98, 98);
+    transition: .2s;
+    color: black!important;
+    cursor: pointer;
+}
+
+.icons-i {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #d9d9d967;
+    border-radius: 15px;
+    background: rgba(43, 42, 42, 0.502);
+}
+
+.item span {
+    font-size: 10px;
+}
+.item i {
+    font-size: 25px;
+}
+
+hr {
+    color: white!important;
+}
+
+.no_msg_bg {
+    height: 70vh;
+    background: rgba(70, 70, 70, 0.502);
+    border-radius: 10px;
+    position: relative;
+    padding: 1rem;
+    overflow-y: auto;
+    padding-bottom: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.inputs {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* width: ; */
+}
+
+.inputs textarea {
+    border: 2px solid #4a6cf7;
+    padding: .5rem!important;
+    border-bottom-left-radius: 10px;
+}
+
+.inputs button {
+    border-bottom-right-radius: 10px;
+    width: 1rem;
+}
+
+.w50 {
+    width: 70%;
+}
+
+.msg_me {
+    color: white;
+    padding: .5rem;
+    border-radius: 8px;
+    background:  #4a6df76f;
+    float: right;
+    border-top-right-radius: 0px;
+    font-weight: lighter;
+}
+.msg_us {
+    color: white;
+    padding: .5rem;
+    border-radius: 8px;
+    background:  #ff9dd46f;
+    float: left;
+    font-weight: lighter;
+    border-top-left-radius: 0;
+}
+
+
+.msg_us::before { 
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    background: #ff9dd46f;
+    position: absolute;
+    left: 0;
+    margin-top: -.5rem;
+}
+
+.msg_me::before {
+    content: '';
+    height: 1rem;
+    width: 1rem;
+    background: #4a6df76f;
+    position: absolute;
+    right: 0;
+    margin-top: -.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.no_a {
+    text-decoration: none!important;
+}
+.line {
+    height: .3rem;
+    width: 2rem;
+    background-color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
