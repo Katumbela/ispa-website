@@ -1,0 +1,84 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.b-r-l-w {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.b-r-w {
+    border-right: 1px solid white;
+}
+.b-l-w {
+    border-left: 1px solid white;
+}
+.b-b-w {
+    border-bottom: 1px solid white;
+}
+.b-t-w {
+    border-bottom: 1px solid white;
+}
+.b-t-i {
+    border-top: 1px solid green;
+}
+.b-b-i {
+    border-bottom: 1px solid green;
+}
+
+.b-l-i {
+    border-bottom: 1px solid green;
+}
+
+.b-r-i {
+    border-bottom: 1px solid green;
+}
+
+.b-r-l-i {
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+}
+.b-l-r-i {
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+.b-b-t-w {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.b-violeta {
+    background: violet;
+}
+.b-verde {
+    background: green;
+}
+.b-azul {
+    background: blue;
+}
+.b-vermelho {
+    background: red;
+}
+.b-laranja {
+    background: orange;
+}
+
+.img-stud {
+    height: 11em;
+}
+
+
+
+@media (max-width: 575px) {
+    .barra {
+        display: none!important;
+    }
+}
+
+.f-16 {
+    font-size: 16px;
+}
